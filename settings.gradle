@@ -1,4 +1,4 @@
-rootProject.name = 'com.power.nonparty'
+rootProject.name = 'com.power.yuneng.nonparty'
 include 'nonparty-zhilu-remote'
 include 'nonparty-service'
 include 'nonparty-domain'

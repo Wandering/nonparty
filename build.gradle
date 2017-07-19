@@ -15,7 +15,7 @@ sourceCompatibility=1.8
 targetCompatibility=1.8
 
 allprojects{
-    group 'power-nonparty'
+    group 'com.power.yuneng.nonparty'
     version '0.0.1-SNAPSHOT'
 
     apply plugin: 'idea'
@@ -27,6 +27,7 @@ allprojects{
     apply plugin: 'maven-publish-auth'
 
     repositories {
+        maven { url "http://192.168.10.49:8081/repository/maven-public/" }
         mavenLocal()
         mavenCentral()
         jcenter()
@@ -47,12 +48,12 @@ allprojects{
             }
         }
 
-//        repositories {
-//            maven {
-//                name = 'starteasy'
-//                url "http://repo.startupeasy.cn:8081/repository/maven-${project.version.endsWith('-SNAPSHOT') ? 'snapshots' : 'releases'}"
-//            }
-//        }
+        repositories {
+            maven {
+                name = 'power'
+                url "http://192.168.10.49:8081/repository/maven-${project.version.endsWith('-SNAPSHOT') ? 'snapshots' : 'releases'}"
+            }
+        }
     }
 }
 task createREADME() {
