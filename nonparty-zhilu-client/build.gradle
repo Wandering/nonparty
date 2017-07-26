@@ -1,4 +1,28 @@
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile "org.springframework.boot:spring-boot-starter-test:$springbootVersion"
+    testCompile "org.springframework.boot:spring-boot-test:$springbootVersion"
+    testCompile "org.springframework.boot:spring-boot-test-autoconfigure:$springbootVersion"
+
+
+    compile "com.google.http-client:google-http-client:$httpclientVersion"
+    compile "com.alibaba:fastjson:$fastjsonVersion"
+    compile "com.power.yuneng.cloud:cloud-spring-client:$powerCloudVersion"
+    compile "com.power.yuneng.cloud:cloud-dynconfig-client:$powerCloudVersion"
+    compile ("org.springframework.boot:spring-boot-starter-web:$springbootVersion"){
+        exclude module: "spring-boot-starter-tomcat"
+    }
+    compile "org.springframework.boot:spring-boot-starter-undertow:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-starter-parent:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-autoconfigure:$springbootVersion"
+    compile "org.springframework.boot:spring-boot-starter-logging:$springbootVersion"
+    // https://mvnrepository.com/artifact/com.alibaba/dubbo
+    compile "com.alibaba:dubbo:$dubboVersion"
+    // https://mvnrepository.com/artifact/com.101tec/zkclient
+    compile "com.101tec:zkclient:0.10"
+
+
     compile project(":nonparty-service")
+    compile project(":zhilu-client-api")
+    compile project(":nonparty-cache")
 }

@@ -4,4 +4,5 @@ include 'nonparty-service'
 include 'nonparty-domain'
 include 'nonparty-common'
 include 'nonparty-zhilu-client'
-
+include 'zhilu-client-api'
+include 'nonparty-cache'
