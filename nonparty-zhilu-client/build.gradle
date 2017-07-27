@@ -12,6 +12,7 @@ dependencies {
     compile ("org.springframework.boot:spring-boot-starter-web:$springbootVersion"){
         exclude module: "spring-boot-starter-tomcat"
     }
+    compile "org.springframework.boot:spring-boot-starter-undertow:$springbootVersion"
     compile "org.springframework.boot:spring-boot-starter-parent:$springbootVersion"
     compile "org.springframework.boot:spring-boot-autoconfigure:$springbootVersion"
     compile "org.springframework.boot:spring-boot-starter-logging:$springbootVersion"
