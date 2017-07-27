@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        //jhipster-needle-gradle-buildscript-dependency - JHipster will add additional gradle build script plugins here
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springbootVersion}"
         classpath 'org.hibernate.build.gradle:gradle-maven-publish-auth:2.0.1+'
     }
 }
