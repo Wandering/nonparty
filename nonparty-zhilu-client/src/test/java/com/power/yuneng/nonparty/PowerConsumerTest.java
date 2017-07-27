@@ -41,8 +41,8 @@ public class PowerConsumerTest{
 //
     @Test
     public void testName() throws Exception {
-        QueryPowerRes res = powerConsumer.queryPower(new QueryPowerReq(10));
-        Assert.isTrue(res.getTotalRows()>0,"数据为空");
+//        QueryPowerRes res = powerConsumer.queryPower(new QueryPowerReq(10));
+//        Assert.isTrue(res.getTotalRows()>0,"数据为空");
     }
 
 }
