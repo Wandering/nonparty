@@ -14,6 +14,6 @@
 
     <!-- 配置服务 -->
     <dubbo:service id="powerConsumer" interface="com.power.yuneng.nonparty.api.IPowerConsumer" ref="httpConsumerClient" timeout="60000" retries="0"/>
-
+    
 </beans>
        
